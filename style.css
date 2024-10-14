@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    color: #000;
+    margin: 15px 0;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* เพิ่มช่องว่างระหว่างปุ่ม */
+    margin-top: 50px;
+}
+
+button {
+    width: 150px;
+    height: 50px; /* กำหนดความสูงที่ชัดเจน */
+    color: white;
+    font-size: 1.2em;
+    background-color: #a8a7a7;
+    border: none; /* ใช้ 'none' แทน 'transparent' สำหรับ border */
+    border-radius: 30px;
+    cursor: pointer; /* เพิ่มเคอร์เซอร์เพื่อแสดงว่าปุ่มคลิกได้ */
+    transition: background-color 0.3s; /* เพิ่ม transition สำหรับสีพื้นหลัง */
+}
+
+button:hover {
+    background-color: #888; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+button.yes-btn {
+    background-color: #000; /* ปรับสีสำหรับปุ่ม Yes */
+}
+
+button.no-btn {
+    background-color: #000; /* ปรับสีสำหรับปุ่ม No */
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* เพิ่ม margin สำหรับจัดตำแหน่งภาพ */
+}
